@@ -1,0 +1,33 @@
+<input type="text" ng-model="search">
+<p ng-show="search">Du suchst gerade nach: {{search}}</p>
+
+<div class="md-body-2" ng-controller="MonsterCtrl" >
+
+    <!--<div class="waves-effect waves-teal" ng-click="currentMonster.setMonster(monster);" ui-sref="details" ng-repeat="monster in monsters | filter:search" flex>
+        {{monster.name}}
+    </div>-->
+
+    <ul class="collection">
+        <a class="collection-item" ng-click="currentMonster.setMonster(monster);" ui-sref="details" ng-repeat="monster in monsters | filter:search" >{{monster.name}}</a>
+    </ul>
+
+
+</div>
+
+
+<!--
+<table class="table" ng-controller="MonsterCtrl">
+    <div   ui-sref="details" ng-repeat="monster in monsters | filter:search">
+        <td>{{monster.id}}</td>
+        <td>{{monster.name}}</td>
+        <td>{{monster.level}}</td>
+        <td>{{monster.b_hp}}</td>
+        <td>{{monster.b_atk}}</td>
+        <td>{{monster.b_def}}</td>
+        <td>{{monster.b_spd}}</td>
+        <td>{{monster.b_crate}}</td>
+        <td>{{monster.b_cdmg}}</td>
+        <td>{{monster.b_red}}</td>
+        <td>{{monster.b_acc}}</td>
+    </div>
+</table>-->
