@@ -8,7 +8,10 @@
     </div>-->
 
     <ul class="collection">
-        <a class="collection-item" ng-click="currentMonster.setMonster(monster);" ui-sref="details" ng-repeat="monster in monsters | filter:search" >{{monster.name}}</a>
+        <a class="collection-item" ng-click="currentMonster.setMonster(monster);" ui-sref="details" ng-repeat="monster in monsters | filter:search" >
+            <img src="/bilder/{{monster.name+'.jpg'}}" alt=""/>
+            {{monster.name}}
+        </a>
     </ul>
 
 
