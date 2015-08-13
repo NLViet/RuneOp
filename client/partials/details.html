@@ -1,3 +1,21 @@
-<div ng-controller="MonsterDetailCtrl">
-    <div>{{currentMonster.getMonster().name}}</div>
+<div class="row">
+    <div ng-controller="MonsterDetailCtrl">
+        <div class="inline">
+                <div>{{monster.name}}</div>
+                <div>{{monster.level}}</div>
+                <div>{{monster.b_hp}}</div>
+                <div>{{monster.b_atk}}</div>
+                <div>{{monster.b_def}}</div>
+                <div>{{monster.b_spd}}</div>
+                <div>{{monster.b_crate}}</div>
+                <div>{{monster.b_cdmg}}</div>
+                <div>{{monster.b_red}}</div>
+                <div>{{monster.b_acc}}</div>
+        </div>
+        <div class="inline">
+            <div ng-repeat="rune in runes">
+                {{rune.type}}
+            </div>
+        </div>
+    </div>
 </div>

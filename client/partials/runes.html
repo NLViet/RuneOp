@@ -1,0 +1,15 @@
+<div ng-controller="RunesCtrl">
+
+    <div class="row">
+        <form novalidate>
+            <input class="" ng-model="rune.id" value="{{runeStorage.getRuneStore().length + 1}}">
+            Type:
+            <input type="text" ng-model="rune.type" />
+            Attk:
+            <input type="text" ng-model="rune.attk" />
+            <input type="submit" ng-click="save(rune)" value="Save" />
+        </form>
+    </div>
+
+
+</div>

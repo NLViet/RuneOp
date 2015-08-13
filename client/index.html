@@ -2,16 +2,24 @@
 <head>
     <meta charset="utf8" />
     <title>AngularJS Tutorial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/basic.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css"> -->
 </head>
 <body>
+<div class="navBar box">
+    <div class="row">
+        <div class="inline" ui-sref="start">Monsters</div>
+        <div class="inline" ui-sref="runes">Runes</div>
+    </div>
+</div>
 <div class="container" ui-view>
 
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script> -->
+<script src="js/angular.min.js"></script>
 <script src="js/angular-ui-router.min.js"></script>
 <script src="js/app.js"></script>
 </body>
